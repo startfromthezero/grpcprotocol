@@ -4,6 +4,12 @@ package user;
 
 option  go_package = "github.com/startfromthezero/grpcprotocol/user";
 
+service Greeter {
+  rpc Register (RegisterRequest) returns (RegisterResponse) {}
+  rpc Login(LoginRequest) returns (LoginResponse) {}
+  rpc GetUserInfo(GetUserInfoRequest) returns (GetUserInfoResponse) {}
+}
+
 // User注册请求消息
 message RegisterRequest {
   string username = 1; // 用户名
