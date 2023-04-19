@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package hello;
 
-option  go_package = "lianxi/start_grpc/hello";
+option  go_package = "github.com/startfromthezero/grpcprotocol/hello";
 
 service Greeter {
   rpc SayHello (HelloRequest) returns (HelloResponse) {}
